@@ -20,6 +20,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -27,19 +28,35 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: lts/*
+          node-version: 22
           cache: npm
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
+      - name: Build production site
         run: npm run build
+
+      - name: Validate production artifact
+        shell: bash
+        run: |
+          test -f dist/index.html
+          test -f dist/favicon.svg
+          test -d dist/assets
+          find dist/assets -type f -name '*.js' -print -quit | grep -q .
+          find dist/assets -type f -name '*.css' -print -quit | grep -q .
+
+          if grep -R -E '(/src/|\.tsx)' dist/index.html; then
+            echo "Errore: dist/index.html contiene ancora riferimenti ai sorgenti TypeScript/TSX."
+            exit 1
+          fi
+
+          echo "Artefatto valido: verranno pubblicati esclusivamente i file compilati in dist/."
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
 
-      - name: Upload build artifact
+      - name: Upload compiled site
         uses: actions/upload-pages-artifact@v5
         with:
           path: ./dist
