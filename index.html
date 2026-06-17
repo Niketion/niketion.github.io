@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="it" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nicolas Giuliani" />
+    <meta
+      name="description"
+      content="Software Engineer e Full-Stack Developer con base a Pescara. Esperienza con .NET, Java Spring, Angular, SQL, Kafka, Keycloak, MinIO e infrastrutture containerizzate."
+    />
+    <meta property="og:title" content="Nicolas Giuliani - Software Engineer" />
+    <meta
+      property="og:description"
+      content="Portfolio di Nicolas Giuliani, Software Engineer e Full-Stack Developer."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://niketion.github.io/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#252422" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    />
+    <title>Nicolas Giuliani - Software Engineer &amp; Full-Stack Developer</title>
+    <script>
+      try {
+        const theme = localStorage.getItem("theme");
+        document.documentElement.classList.toggle("dark", theme !== "light");
+      } catch {
+        document.documentElement.classList.add("dark");
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nicolas Giuliani",
+        "jobTitle": "Software Engineer & Full-Stack Developer",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Pescara",
+          "addressCountry": "IT"
+        },
+        "url": "https://niketion.github.io/",
+        "sameAs": ["https://github.com/Niketion", "https://www.linkedin.com/in/nicolasgiuliani/"]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
