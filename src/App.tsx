@@ -10,6 +10,7 @@ const content = {
       esperienza: "Esperienza",
       progetto: "Focus",
       progetti: "Altri progetti",
+      contributore: "Contributore",
       stack: "Stack",
       formazione: "Formazione",
       principi: "Principi",
@@ -55,6 +56,13 @@ const content = {
     },
     projects: [
       {
+        title: "MedCareHub",
+        sub: "Full-Stack Healthcare Platform",
+        text: "Piattaforma full-stack per la gestione dei processi di una clinica: disponibilità dei medici, prenotazioni dei pazienti, documenti clinici, ruoli applicativi e dashboard operative. Include autenticazione OIDC/JWT, protezione dalle doppie prenotazioni, audit logging, KPI dashboard e test backend e frontend.",
+        stack:
+          "ASP.NET Core .NET 8 · Angular · Entity Framework Core · PostgreSQL · Keycloak · MinIO · Docker Compose · Jest",
+      },
+      {
         title: "Ordy",
         sub: "Intelligent Photo Gallery Scanner",
         text: "App mobile React Native che analizza la galleria fotografica per individuare duplicati, immagini simili e immagini monocromatiche. Gestione della memoria, caricamento progressivo, elaborazione parallela e perceptual hashing.",
@@ -77,6 +85,20 @@ const content = {
         sub: "Vue / Nuxt",
         text: "Layer dedicato alla visualizzazione e gestione di liste server.",
         stack: "Vue · Nuxt",
+      },
+    ],
+    contributions: [
+      {
+        title: "FlowSurface",
+        sub: "Native crypto charting platform",
+        text: "Piattaforma desktop open source in Rust per l’analisi dei mercati crypto e dell’order flow, alla base del fork personale Flowdepth.",
+        href: "https://github.com/flowsurface-rs/flowsurface",
+      },
+      {
+        title: "SlopCop",
+        sub: "AI text detection",
+        text: "Strumento che rileva testi generati dall’AI, interamente eseguito nel browser.",
+        href: "https://github.com/Niketion/slop-cop",
       },
     ],
     stack: {
@@ -135,6 +157,7 @@ const content = {
       esperienza: "Experience",
       progetto: "Focus",
       progetti: "Other work",
+      contributore: "Contributor",
       stack: "Stack",
       formazione: "Education",
       principi: "Principles",
@@ -180,6 +203,13 @@ const content = {
     },
     projects: [
       {
+        title: "MedCareHub",
+        sub: "Full-Stack Healthcare Platform",
+        text: "Full-stack platform for clinic operations: doctor availability, patient bookings, clinical documents, application roles and operational dashboards. It includes OIDC/JWT authentication, double-booking protection, audit logging, a KPI dashboard, and backend and frontend tests.",
+        stack:
+          "ASP.NET Core .NET 8 · Angular · Entity Framework Core · PostgreSQL · Keycloak · MinIO · Docker Compose · Jest",
+      },
+      {
         title: "Ordy",
         sub: "Intelligent Photo Gallery Scanner",
         text: "React Native mobile app that scans the photo gallery for duplicates, similar images and monochrome shots. Memory management, progressive loading, parallel processing and perceptual hashing.",
@@ -202,6 +232,20 @@ const content = {
         sub: "Vue / Nuxt",
         text: "Layer dedicated to displaying and managing server lists.",
         stack: "Vue · Nuxt",
+      },
+    ],
+    contributions: [
+      {
+        title: "FlowSurface",
+        sub: "Native crypto charting platform",
+        text: "Open-source Rust desktop platform for crypto-market and order-flow analysis, which provides the foundation for the personal Flowdepth fork.",
+        href: "https://github.com/flowsurface-rs/flowsurface",
+      },
+      {
+        title: "SlopCop",
+        sub: "AI text detection",
+        text: "A tool that detects AI-generated text, running entirely in the browser.",
+        href: "https://github.com/Niketion/slop-cop",
       },
     ],
     stack: {
@@ -408,6 +452,32 @@ export default function App() {
                   {p.text}
                 </p>
                 <p className="text-xs text-muted-foreground/80 mt-1.5 font-mono">{p.stack}</p>
+              </div>
+            ))}
+          </div>
+        </Row>
+      </section>
+
+      {/* Contributore */}
+      <section className="mb-20">
+        <Row label={c.sections.contributore}>
+          <div className="space-y-6">
+            {c.contributions.map((project) => (
+              <div key={project.title}>
+                <h3 className="text-sm font-semibold">
+                  <a
+                    href={project.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="link-underline"
+                  >
+                    {project.title}
+                  </a>
+                  <span className="text-muted-foreground font-normal"> - {project.sub}</span>
+                </h3>
+                <p className="text-sm text-muted-foreground mt-1.5 max-w-[52ch] text-pretty leading-relaxed">
+                  {project.text}
+                </p>
               </div>
             ))}
           </div>
