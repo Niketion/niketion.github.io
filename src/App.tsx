@@ -60,19 +60,19 @@ const content = {
         sub: "Full-Stack Healthcare Platform",
         text: "Piattaforma full-stack per la gestione dei processi di una clinica: disponibilità dei medici, prenotazioni dei pazienti, documenti clinici, ruoli applicativi e dashboard operative. Include autenticazione OIDC/JWT, protezione dalle doppie prenotazioni, audit logging, KPI dashboard e test backend e frontend.",
         stack:
-          "ASP.NET Core .NET 8 · Angular · Entity Framework Core · PostgreSQL · Keycloak · MinIO · Docker Compose · Jest",
+          "ASP.NET Core .NET 8 / Angular / Entity Framework Core / PostgreSQL / Keycloak / MinIO / Docker Compose / Jest",
       },
       {
         title: "Ordy",
         sub: "Intelligent Photo Gallery Scanner",
         text: "App mobile React Native che analizza la galleria fotografica per individuare duplicati, immagini simili e immagini monocromatiche. Gestione della memoria, caricamento progressivo, elaborazione parallela e perceptual hashing.",
-        stack: "React Native · Expo · TypeScript · Image processing",
+        stack: "React Native / Expo / TypeScript / Image processing",
       },
       {
         title: "Weather Profile Picture Updater",
         sub: "Automation",
         text: "Automazione Python che aggiorna l'immagine profilo Telegram in base alle condizioni meteorologiche della città selezionata.",
-        stack: "Python · Telethon · Open-Meteo API · YAML",
+        stack: "Python / Telethon / Open-Meteo API / YAML",
       },
       {
         title: "TownyWar",
@@ -84,7 +84,7 @@ const content = {
         title: "Server Layer",
         sub: "Vue / Nuxt",
         text: "Layer dedicato alla visualizzazione e gestione di liste server.",
-        stack: "Vue · Nuxt",
+        stack: "Vue / Nuxt",
       },
     ],
     contributions: [
@@ -117,7 +117,7 @@ const content = {
       {
         period: "2024 - 2026",
         title: "Università Pegaso",
-        text: "Bachelor in Informatica per le Aziende Digitali (L-31), in fase di completamento.",
+        text: "Laurea in Informatica per le Aziende Digitali (L-31) / 99/110.",
       },
       {
         period: "2021 - 2023",
@@ -127,7 +127,7 @@ const content = {
       {
         period: "2016 - 2021",
         title: "Istituto A. Volta, Pescara",
-        text: "Diploma tecnico in Informatica · 96/100.",
+        text: "Diploma tecnico in Informatica / 96/100.",
       },
     ],
     principles: [
@@ -207,19 +207,19 @@ const content = {
         sub: "Full-Stack Healthcare Platform",
         text: "Full-stack platform for clinic operations: doctor availability, patient bookings, clinical documents, application roles and operational dashboards. It includes OIDC/JWT authentication, double-booking protection, audit logging, a KPI dashboard, and backend and frontend tests.",
         stack:
-          "ASP.NET Core .NET 8 · Angular · Entity Framework Core · PostgreSQL · Keycloak · MinIO · Docker Compose · Jest",
+          "ASP.NET Core .NET 8 / Angular / Entity Framework Core / PostgreSQL / Keycloak / MinIO / Docker Compose / Jest",
       },
       {
         title: "Ordy",
         sub: "Intelligent Photo Gallery Scanner",
         text: "React Native mobile app that scans the photo gallery for duplicates, similar images and monochrome shots. Memory management, progressive loading, parallel processing and perceptual hashing.",
-        stack: "React Native · Expo · TypeScript · Image processing",
+        stack: "React Native / Expo / TypeScript / Image processing",
       },
       {
         title: "Weather Profile Picture Updater",
         sub: "Automation",
         text: "Python automation that updates a Telegram profile picture based on the weather conditions of a chosen city.",
-        stack: "Python · Telethon · Open-Meteo API · YAML",
+        stack: "Python / Telethon / Open-Meteo API / YAML",
       },
       {
         title: "TownyWar",
@@ -231,7 +231,7 @@ const content = {
         title: "Server Layer",
         sub: "Vue / Nuxt",
         text: "Layer dedicated to displaying and managing server lists.",
-        stack: "Vue · Nuxt",
+        stack: "Vue / Nuxt",
       },
     ],
     contributions: [
@@ -264,7 +264,7 @@ const content = {
       {
         period: "2024 - 2026",
         title: "Università Pegaso",
-        text: "Bachelor in Computer Science for Digital Enterprises (L-31), in progress.",
+        text: "Bachelor's degree in Computer Science for Digital Enterprises (L-31) / 99/110.",
       },
       {
         period: "2021 - 2023",
@@ -274,7 +274,7 @@ const content = {
       {
         period: "2016 - 2021",
         title: "Istituto A. Volta, Pescara",
-        text: "Technical IT Diploma · 96/100.",
+        text: "Technical IT Diploma / 96/100.",
       },
     ],
     principles: [
@@ -379,7 +379,7 @@ export default function App() {
           >
             EN
           </button>
-          <span className="text-muted-foreground mx-1">·</span>
+          <span className="text-muted-foreground mx-1">/</span>
           <button
             onClick={toggleTheme}
             className="text-muted-foreground hover:text-foreground transition-colors"
@@ -559,7 +559,7 @@ export default function App() {
 
       <footer className="mt-28 pt-6 border-t border-foreground/10">
         <p className="text-[11px] text-muted-foreground uppercase tracking-widest">
-          © {new Date().getFullYear()} Nicolas Giuliani · {c.footer}
+          © {new Date().getFullYear()} Nicolas Giuliani / {c.footer}
         </p>
       </footer>
     </main>
