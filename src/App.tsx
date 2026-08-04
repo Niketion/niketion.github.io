@@ -46,11 +46,11 @@ const content = {
       },
     ],
     focus: {
-      title: "MedCareHub",
-      sub: "Full-Stack Healthcare Platform",
-      text: "Piattaforma full-stack per la gestione dei processi di una clinica: disponibilità dei medici, prenotazioni dei pazienti, documenti clinici, ruoli applicativi e dashboard operative. Autenticazione OIDC/JWT, ruoli patient / operator / doctor / admin, protezione dalle doppie prenotazioni, audit logging, KPI dashboard, test backend e frontend.",
+      title: "Flowdepth",
+      sub: "Fork personale di FlowSurface / Crypto order-flow terminal",
+      text: "Terminale desktop open source, sviluppato in Rust, per osservare i mercati crypto attraverso l’order flow. Riunisce grafici footprint, heatmap L2 e Time & Sales con bolle di volume adattive, rilevamento di possibili iceberg su Binance e analisi delle opzioni come GEX. Include cache persistente dei dati e meccanismi di riconnessione e recupero storico per sessioni di analisi più affidabili.",
       stack:
-        "ASP.NET Core .NET 8 · Angular · Entity Framework Core · PostgreSQL · Keycloak · MinIO · Docker Compose · Jest",
+        "Rust / iced / WebSocket / REST APIs / Binance / Deribit / Order flow / L2 heatmaps",
       cta: "Vedi il progetto",
     },
     projects: [
@@ -171,11 +171,11 @@ const content = {
       },
     ],
     focus: {
-      title: "MedCareHub",
-      sub: "Full-Stack Healthcare Platform",
-      text: "Full-stack platform for clinic operations: doctor availability, patient bookings, clinical documents, application roles and operational dashboards. OIDC/JWT authentication, patient / operator / doctor / admin roles, double-booking protection, audit logging, KPI dashboard, backend and frontend tests.",
+      title: "Flowdepth",
+      sub: "Personal FlowSurface fork / Crypto order-flow terminal",
+      text: "An open-source native desktop terminal, built in Rust, for observing crypto markets through order flow. It combines footprint charts, L2 heatmaps and Time & Sales with adaptive volume bubbles, possible Binance iceberg detection and options analytics such as GEX. Persistent market-data caching plus reconnect and historical-recovery mechanisms make longer analysis sessions more reliable.",
       stack:
-        "ASP.NET Core .NET 8 · Angular · Entity Framework Core · PostgreSQL · Keycloak · MinIO · Docker Compose · Jest",
+        "Rust / iced / WebSocket / REST APIs / Binance / Deribit / Order flow / L2 heatmaps",
       cta: "View the project",
     },
     projects: [
@@ -368,7 +368,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Focus - MedCareHub */}
+      {/* Focus - Flowdepth */}
       <section className="mb-20">
         <Row label={c.sections.progetto}>
           <h3 className="text-sm font-semibold">
@@ -383,7 +383,7 @@ export default function App() {
           </p>
           <div className="mt-4">
             <a
-              href="https://github.com/Niketion"
+              href="https://github.com/Niketion/flowdepth"
               target="_blank"
               rel="noreferrer"
               className="link-underline text-sm font-medium inline-block"
