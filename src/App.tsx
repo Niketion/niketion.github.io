@@ -89,6 +89,12 @@ const content = {
     ],
     contributions: [
       {
+        title: "Blnk",
+        sub: "Open-source financial ledger",
+        text: "Ledger finanziario open source a partita doppia per prodotti fintech, wallet, sistemi di pagamento e altre applicazioni ad alta intensità di transazioni.",
+        href: "https://github.com/blnkfinance/blnk",
+      },
+      {
         title: "FlowSurface",
         sub: "Native crypto charting platform",
         text: "Piattaforma desktop open source in Rust per l’analisi dei mercati crypto e dell’order flow, alla base del fork personale Flowdepth.",
@@ -235,6 +241,12 @@ const content = {
       },
     ],
     contributions: [
+      {
+        title: "Blnk",
+        sub: "Open-source financial ledger",
+        text: "Open-source double-entry financial ledger for fintech products, wallets, payment systems and other transaction-heavy applications.",
+        href: "https://github.com/blnkfinance/blnk",
+      },
       {
         title: "FlowSurface",
         sub: "Native crypto charting platform",
